@@ -1,18 +1,6 @@
-﻿Console.WriteLine("Enter a number");
-try
-{
-    int num = Convert.ToInt32(Console.ReadLine());
-
-    List<int> decompose = Decompose(num - 1, num * num);
-    Console.WriteLine($"Decompose of {num} is");
-    if (decompose != null) foreach (int x in decompose) Console.WriteLine(x);
-    Console.ReadLine();
-}
-catch (Exception ex)
-{
-    Console.WriteLine("Invalid INPUT");
-}
-
+﻿int num = 11;
+List<int> decompose = Decompose(num - 1, num * num);
+Console.WriteLine();
 
 List<int> Decompose(int i, int total)
 {
