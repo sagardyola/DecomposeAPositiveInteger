@@ -5,7 +5,7 @@ try
 
     List<int> decompose = Decompose(num - 1, num * num);
     Console.WriteLine($"Decompose of {num} is");
-    foreach (int x in decompose) Console.WriteLine(x);
+    if (decompose != null) foreach (int x in decompose) Console.WriteLine(x);
     Console.ReadLine();
 }
 catch (Exception ex)
